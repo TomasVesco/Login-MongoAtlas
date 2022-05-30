@@ -1,10 +1,13 @@
 import { Router } from 'express';
 
+import dotenv from 'dotenv/config';
+import JWTauth from '../../middleware/jwtCheck.js';
+
 import sessionCheck from '../../middleware/sessionCheck.js';
 
 const router = Router();
 
-router.get('/', [sessionCheck], async (req, res) => {
+router.get('/', [sessionCheck, JWTauth], async (req, res) => {
     try{
 
         const userName = req.session.name;

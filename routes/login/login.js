@@ -18,8 +18,9 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
     try{
-
-        const response = await MongoAtlasLoginUser.checkCredentials(req.body.name, req.body.password);
+        
+        const { name, password } = req.body;
+        const response = await MongoAtlasLoginUser.checkCredentials(name, password);
 
         if(response != 1){
             req.session.error = response;
