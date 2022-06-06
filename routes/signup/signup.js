@@ -1,9 +1,12 @@
 import { Router } from 'express';
 
+import { LocalStorage } from "node-localstorage"
+
 import jwt from 'jsonwebtoken';
 
 import { MongoAtlasSignup } from '../../services/signup/signupAtlas.js';
 
+const localStorage = new LocalStorage('./scratch');
 const MongoAtlasSignupUser = new MongoAtlasSignup(); 
 
 const router = Router();
@@ -29,7 +32,7 @@ router.post('/', async (req, res) => {
             res.status(200).redirect('/api/error');
         } else {
             const TOKEN = jwt.sign({ name }, process.env.JWT_TOKEN);
-            req.session.TOKEN = `${name} ${TOKEN}`;
+            localStorage.setItem('TOKEN', `${name} ${TOKEN}`);
             res.status(200).redirect('/api/login');
         }
 

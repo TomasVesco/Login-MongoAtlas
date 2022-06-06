@@ -1,16 +1,20 @@
 import jwt from 'jsonwebtoken';
 
+import { LocalStorage } from "node-localstorage"
+
+const localStorage = new LocalStorage('./scratch');
+
 import dotenv from 'dotenv/config';
 
 const JWTauth = (req, res, next) => {
 
-    const authHeader = req.session.TOKEN;
+    const localTOKEN = localStorage.getItem('TOKEN');
 
-    if(!authHeader) {
+    if(!localTOKEN) {
         req.session.error = 'Not authorized';
         res.status(401).redirect('/api/error');
     } else {
-        const TOKEN = authHeader.split(' ')[1];
+        const TOKEN = localTOKEN.split(' ')[1];
 
         jwt.verify(TOKEN, process.env.JWT_TOKEN, (err) => {
             if(err) {
