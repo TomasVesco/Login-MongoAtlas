@@ -13,25 +13,7 @@
     <div class="form-group">
         <div>
             <div>
-                <p>OS: <%=OS%></p>
-            </div>
-            <div>
-                <p>Memory (rss): <%=memoryUsageRSS%></p>
-            </div>
-            <div>
-                <p>NodeJS: <%=nodeVersion%></p>
-            </div>
-            <div>
-                <p>UID: <%=UID%></p>
-            </div>
-            <div>
-                <p>Exect Path: <%=exectPath%></p>
-            </div>
-            <div>
-                <p>Dirname: <%=dirname%></p>
-            </div>
-            <div class="others-args">
-                <p>Others args: <%=args%></p>
+                <p><%=finishProcess%></p>
             </div>
             <div>
                 <button class="btn-home" onclick="location.href = '/api/home'">Back to home</button>
@@ -45,7 +27,7 @@
     .form-group {
         margin-top: 100px;
         width: 1200px;
-        height: 350px;
+        height: fit-content;
         background-color: #FFFF;
         border-radius: 50px;
         padding: 30px;

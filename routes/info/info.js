@@ -13,8 +13,9 @@ router.get('/', async (req, res) => {
         const nodeVersion = process.version;
         const UID = process.geteuid();
         const memoryUsageRSS = memoryUsage.rss();
+        const dirname = process.cwd();
         
-        res.status(200).render('info', { args, OS, memoryUsageRSS, nodeVersion, UID, exectPath });
+        res.status(200).render('info', { args, OS, memoryUsageRSS, nodeVersion, UID, exectPath, dirname });
 
     }catch(err){
         console.log(err);

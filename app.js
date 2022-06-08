@@ -12,6 +12,7 @@ import home from './routes/home/home.js';
 import logout from './routes/logout/logout.js';
 import sessionExpired from './routes/sessionExpired/sessionExpired.js';
 import info from './routes/info/info.js';
+import randoms from './routes/randoms/randoms.js';
 
 const app = express();
 
@@ -41,5 +42,6 @@ app.use('/api/home', home);
 app.use('/api/logout', logout);
 app.use('/api/session-expired', sessionExpired);
 app.use('/api/info', info);
+app.use('/api/randoms', randoms);
 
 export default app;
