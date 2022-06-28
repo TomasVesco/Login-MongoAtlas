@@ -2,7 +2,6 @@ import express from 'express';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
 import MongoStore from 'connect-mongo';
-import dotenv from 'dotenv/config';
 
 import login from './routes/login/login.js';
 import loginError from './routes/login/loginError.js';

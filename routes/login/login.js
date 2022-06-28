@@ -20,14 +20,15 @@ router.post('/', async (req, res) => {
     try{
         
         const { name, password } = req.body;
+
         const response = await MongoAtlasLoginUser.checkCredentials(name, password);
 
-        if(response != 1){
-            req.session.error = response;
-            res.status(200).redirect('/api/error');
-        } else {
+        if(response === 1){
             req.session.name = req.body.name;
             res.status(200).redirect('/api/home');
+        } else {
+            req.session.error = response;
+            res.status(200).redirect('/api/error');
         }
 
     }catch(err){

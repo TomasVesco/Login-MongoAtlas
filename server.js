@@ -8,7 +8,7 @@ function param(p) {
     return process.argv.slice(2)[index + 1];
 }
 
-const PORT = param('--port') || 8080;
+const PORT = param('--port') || 8082;
 
 app.listen( PORT, () => {
     console.log(`Servidor escuchando en el puerto: ${PORT}`);
