@@ -1,7 +1,4 @@
 import { Router } from 'express';
-import { fork } from 'child_process';
-
-const forked = fork('child.js');
 
 const router = Router();
 

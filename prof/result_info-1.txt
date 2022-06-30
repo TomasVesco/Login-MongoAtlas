@@ -1,0 +1,937 @@
+Statistical profiling result from isolate-0x5d586c0-17187-v8.log, (2992 ticks, 0 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   2388   79.8%          /usr/local/bin/node
+     41    1.4%          /usr/lib/x86_64-linux-gnu/libc-2.31.so
+      3    0.1%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+      2    0.1%          [vdso]
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     21    0.7%    3.8%  RegExp: [ \t]*<%_
+      7    0.2%    1.3%  LazyCompile: *resolve node:path:1091:10
+      6    0.2%    1.1%  LazyCompile: *normalizeString node:path:66:25
+      5    0.2%    0.9%  LazyCompile: *scanLine /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:815:22
+      5    0.2%    0.9%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      5    0.2%    0.9%  Function: ^deserializeObject /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/parser/deserializer.js:65:27
+      4    0.1%    0.7%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      4    0.1%    0.7%  RegExp: (<%%|%%>|<%=|<%-|<%_|<%#|<%|%>|-%>|_%>)
+      3    0.1%    0.5%  LazyCompile: *next /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/index.js:177:16
+      3    0.1%    0.5%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      3    0.1%    0.5%  Function: ^validateString node:internal/validators:118:24
+      2    0.1%    0.4%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      2    0.1%    0.4%  LazyCompile: *basename node:path:1306:11
+      2    0.1%    0.4%  Function: ^header /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/response.js:777:29
+      2    0.1%    0.4%  Function: ^createHttpError /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/send/index.js:977:26
+      2    0.1%    0.4%  Function: ^compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:571:21
+      2    0.1%    0.4%  Function: ^EventEmitter.init node:events:327:29
+      2    0.1%    0.4%  Function: ^<anonymous> node:_http_outgoing:564:45
+      1    0.0%    0.2%  RegExp: ^\/api\/login\/?(?=\/|$)
+      1    0.0%    0.2%  RegExp: ^[a-zA-Z_][a-zA-Z_0-9]*$
+      1    0.0%    0.2%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    0.2%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      1    0.0%    0.2%  RegExp: =+$
+      1    0.0%    0.2%  RegExp: ;\s*charset\s*=
+      1    0.0%    0.2%  RegExp: (?:^|\/)\.?\.$
+      1    0.0%    0.2%  LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+      1    0.0%    0.2%  LazyCompile: *trim_prefix /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/index.js:293:23
+      1    0.0%    0.2%  LazyCompile: *restore /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/index.js:631:17
+      1    0.0%    0.2%  LazyCompile: *pushAsyncContext node:internal/async_hooks:540:26
+      1    0.0%    0.2%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      1    0.0%    0.2%  LazyCompile: *formatWithOptionsInternal node:internal/util/inspect:2048:35
+      1    0.0%    0.2%  LazyCompile: *fastparse /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.2%  LazyCompile: *extname node:path:1385:10
+      1    0.0%    0.2%  LazyCompile: *emit node:events:475:44
+      1    0.0%    0.2%  LazyCompile: *_storeHeader node:_http_outgoing:374:22
+      1    0.0%    0.2%  Function: ^wrapmethods /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:394:25
+      1    0.0%    0.2%  Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      1    0.0%    0.2%  Function: ^toPathIfFileURL node:internal/url:1499:25
+      1    0.0%    0.2%  Function: ^store.generate /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:158:28
+      1    0.0%    0.2%  Function: ^status /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/response.js:67:29
+      1    0.0%    0.2%  Function: ^socketOnDrain node:_http_server:564:23
+      1    0.0%    0.2%  Function: ^shouldSave /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:440:24
+      1    0.0%    0.2%  Function: ^shift node:internal/fixed_queue:80:8
+      1    0.0%    0.2%  Function: ^setHasTickScheduled node:internal/process/task_queues:52:29
+      1    0.0%    0.2%  Function: ^serveStatic /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/serve-static/index.js:72:31
+      1    0.0%    0.2%  Function: ^selectColor /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/log4js/node_modules/debug/src/common.js:41:22
+      1    0.0%    0.2%  Function: ^resolve node:path:1091:10
+      1    0.0%    0.2%  Function: ^removeColors node:internal/util:76:22
+      1    0.0%    0.2%  Function: ^removeAllListeners node:events:749:32
+      1    0.0%    0.2%  Function: ^remove node:internal/linkedlist:16:16
+      1    0.0%    0.2%  Function: ^readableAddChunk node:internal/streams/readable:236:26
+      1    0.0%    0.2%  Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1    0.0%    0.2%  Function: ^readFileSync node:fs:450:22
+      1    0.0%    0.2%  Function: ^query /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/middleware/query.js:39:24
+      1    0.0%    0.2%  Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    0.0%    0.2%  Function: ^parse /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/content-type/index.js:106:16
+      1    0.0%    0.2%  Function: ^openSync node:fs:576:18
+      1    0.0%    0.2%  Function: ^onwrite node:internal/streams/writable:425:17
+      1    0.0%    0.2%  Function: ^normalize node:path:1127:12
+      1    0.0%    0.2%  Function: ^next /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/index.js:177:16
+      1    0.0%    0.2%  Function: ^needFinish node:internal/streams/writable:650:20
+      1    0.0%    0.2%  Function: ^module.exports /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/utils-merge/index.js:16:36
+      1    0.0%    0.2%  Function: ^matchHeader node:_http_outgoing:524:21
+      1    0.0%    0.2%  Function: ^isURLInstance node:internal/url:1495:23
+      1    0.0%    0.2%  Function: ^isBelowBreakLength node:internal/util/inspect:1878:28
+      1    0.0%    0.2%  Function: ^hash /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:596:14
+      1    0.0%    0.2%  Function: ^hasObserver node:internal/perf/observe:441:21
+      1    0.0%    0.2%  Function: ^getStatsFromBinding node:internal/fs/utils:531:29
+      1    0.0%    0.2%  Function: ^getKeys node:internal/util/inspect:688:17
+      1    0.0%    0.2%  Function: ^getColorDepth node:internal/tty:106:23
+      1    0.0%    0.2%  Function: ^from node:buffer:296:28
+      1    0.0%    0.2%  Function: ^formatWithOptionsInternal node:internal/util/inspect:2048:35
+      1    0.0%    0.2%  Function: ^formatRaw node:internal/util/inspect:820:19
+      1    0.0%    0.2%  Function: ^formatProperty node:internal/util/inspect:1810:24
+      1    0.0%    0.2%  Function: ^formatPrimitive node:internal/util/inspect:1519:25
+      1    0.0%    0.2%  Function: ^finalhandler /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/finalhandler/index.js:77:23
+      1    0.0%    0.2%  Function: ^done /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/response.js:1033:27
+      1    0.0%    0.2%  Function: ^destroyHooksExist node:internal/async_hooks:487:27
+      1    0.0%    0.2%  Function: ^clearIncoming node:_http_server:754:23
+      1    0.0%    0.2%  Function: ^checkListener node:events:258:23
+      1    0.0%    0.2%  Function: ^checkIsHttpToken node:_http_common:221:26
+      1    0.0%    0.2%  Function: ^anonymous /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:695:59
+      1    0.0%    0.2%  Function: ^_unrefTimer node:net:431:52
+      1    0.0%    0.2%  Function: ^_send node:_http_outgoing:319:49
+      1    0.0%    0.2%  Function: ^_implicitHeader node:_http_server:265:68
+      1    0.0%    0.2%  Function: ^_flushOutput node:_http_outgoing:951:63
+      1    0.0%    0.2%  Function: ^_destroy node:internal/streams/destroy:70:18
+      1    0.0%    0.2%  Function: ^Timeout node:internal/timers:167:17
+      1    0.0%    0.2%  Function: ^Stats._checkModeProperty node:internal/fs/utils:518:46
+      1    0.0%    0.2%  Function: ^Socket.resume node:net:652:35
+      1    0.0%    0.2%  Function: ^Socket._writeGeneric node:net:791:42
+      1    0.0%    0.2%  Function: ^ReadableState node:internal/streams/readable:78:23
+      1    0.0%    0.2%  Function: ^Readable.on node:internal/streams/readable:874:33
+      1    0.0%    0.2%  Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    0.0%    0.2%  Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    0.0%    0.2%  Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    0.0%    0.2%  Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    0.0%    0.2%  Function: ^Long.comp /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/long.js:312:36
+      1    0.0%    0.2%  Function: ^Long /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/long.js:59:18
+      1    0.0%    0.2%  Function: ^<anonymous> node:internal/fs/utils:892:42
+      1    0.0%    0.2%  Function: ^<anonymous> node:buffer:349:36
+      1    0.0%    0.2%  Function: ^<anonymous> :1:1
+      1    0.0%    0.2%  Function: ^<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/request.js:467:36
+      1    0.0%    0.2%  Function: ^<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:742:32
+
+ [C++]:
+   ticks  total  nonlib   name
+    174    5.8%   31.2%  epoll_pwait
+     74    2.5%   13.3%  __write
+     40    1.3%    7.2%  fwrite
+     18    0.6%    3.2%  __pthread_cond_wait
+     13    0.4%    2.3%  __GI___pthread_mutex_unlock
+     11    0.4%    2.0%  __libc_malloc
+     10    0.3%    1.8%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      9    0.3%    1.6%  __mprotect
+      6    0.2%    1.1%  _IO_file_xsputn
+      5    0.2%    0.9%  __pthread_cond_signal
+      4    0.1%    0.7%  syscall
+      4    0.1%    0.7%  __libc_read
+      3    0.1%    0.5%  __munmap
+      2    0.1%    0.4%  std::ostream::sentry::sentry(std::ostream&)
+      2    0.1%    0.4%  operator new(unsigned long)
+      2    0.1%    0.4%  cfree
+      2    0.1%    0.4%  __lll_lock_wait
+      2    0.1%    0.4%  __clock_gettime
+      1    0.0%    0.2%  std::ostream& std::ostream::_M_insert<long>(long)
+      1    0.0%    0.2%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const
+      1    0.0%    0.2%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      1    0.0%    0.2%  shutdown
+      1    0.0%    0.2%  operator delete[](void*)
+      1    0.0%    0.2%  fputc
+      1    0.0%    0.2%  __madvise
+      1    0.0%    0.2%  __GI___pthread_rwlock_wrlock
+      1    0.0%    0.2%  __GI___pthread_rwlock_unlock
+      1    0.0%    0.2%  __GI___pthread_mutex_lock
+      1    0.0%    0.2%  _IO_file_sync
+
+ [Summary]:
+   ticks  total  nonlib   name
+    166    5.5%   29.7%  JavaScript
+    392   13.1%   70.3%  C++
+    118    3.9%   21.1%  GC
+   2434   81.4%          Shared libraries
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     64   41.6%    2.1%  __write
+     37   24.0%    1.2%  fwrite
+     10    6.5%    0.3%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      8    5.2%    0.3%  __libc_malloc
+      7    4.5%    0.2%  __mprotect
+      6    3.9%    0.2%  __GI___pthread_mutex_unlock
+      5    3.2%    0.2%  _IO_file_xsputn
+      4    2.6%    0.1%  syscall
+      2    1.3%    0.1%  cfree
+      1    0.6%    0.0%  std::ostream::sentry::sentry(std::ostream&)
+      1    0.6%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)
+      1    0.6%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const
+      1    0.6%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      1    0.6%    0.0%  operator new(unsigned long)
+      1    0.6%    0.0%  operator delete[](void*)
+      1    0.6%    0.0%  fputc
+      1    0.6%    0.0%  __pthread_cond_wait
+      1    0.6%    0.0%  __madvise
+      1    0.6%    0.0%  __GI___pthread_rwlock_unlock
+      1    0.6%    0.0%  _IO_file_sync
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   2388   79.8%  /usr/local/bin/node
+   1565   65.5%    /usr/local/bin/node
+    369   23.6%      Function: ^compileFunction node:vm:308:25
+    364   98.6%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+    363   99.7%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+    344   94.8%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     19    5.2%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      5    1.4%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      5  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      5  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     89    5.7%      /usr/local/bin/node
+     28   31.5%        LazyCompile: *scanLine /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:815:22
+     21   75.0%          LazyCompile: *<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:742:32
+     20   95.2%            /usr/local/bin/node
+      1    4.8%            LazyCompile: *compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:571:21
+      7   25.0%          Function: ^<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:742:32
+      7  100.0%            /usr/local/bin/node
+      5    5.6%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      5  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      4   80.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1   20.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      5    5.6%        Function: ^exports.escapeXML /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/utils.js:96:30
+      5  100.0%          Function: ^<anonymous> :1:20
+      5  100.0%            Function: ^anonymous /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:695:59
+      4    4.5%        Function: ^expressInit /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/middleware/init.js:29:30
+      2   50.0%          LazyCompile: *trim_prefix /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/index.js:293:23
+      2  100.0%            LazyCompile: *next /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/index.js:177:16
+      1   25.0%          LazyCompile: *handle /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/index.js:293:23
+      1   25.0%          Function: ^handle /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/index.js:293:23
+      3    3.4%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      2   66.7%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1   33.3%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      3    3.4%        Function: ^scanLine /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:815:22
+      3  100.0%          Function: ^<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:742:32
+      3  100.0%            /usr/local/bin/node
+      3    3.4%        Function: ^exports.escapeRegExpChars /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/utils.js:41:38
+      3  100.0%          Function: ^createRegex /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:560:25
+      3  100.0%            Function: ^Template /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:509:18
+      3    3.4%        Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      3  100.0%          Function: ^<anonymous> node:_http_outgoing:564:45
+      3  100.0%            Function: ^setHeader node:_http_outgoing:574:57
+      2    2.2%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:507:36
+      2  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:572:30
+      2  100.0%            LazyCompile: ~packageExportsResolve node:internal/modules/esm/resolve:678:31
+      2    2.2%        Function: ^translatePeerCertificate node:_tls_common:125:34
+      2  100.0%          Function: ^translatePeerCertificate node:_tls_common:125:34
+      1   50.0%            LazyCompile: ~TLSSocket.getPeerCertificate node:_tls_wrap:986:50
+      1   50.0%            Function: ^TLSSocket.getPeerCertificate node:_tls_wrap:986:50
+      2    2.2%        Function: ^onParserExecuteCommon node:_http_server:696:31
+      2  100.0%          Function: ^onParserExecute node:_http_server:639:25
+      2    2.2%        Function: ^header /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/response.js:777:29
+      1   50.0%          Function: ^send /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/response.js:111:25
+      1  100.0%            Function: ^done /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/response.js:1033:27
+      1   50.0%          Function: ^contentType /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/response.js:619:32
+      1  100.0%            Function: ^send /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/response.js:111:25
+      2    2.2%        Function: ^createRegex /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:560:25
+      2  100.0%          Function: ^Template /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:509:18
+      2  100.0%            Function: ^compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:381:35
+      1    1.1%        LazyCompile: ~replaceTilde /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/semver/semver.js:989:23
+      1  100.0%          LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/semver/semver.js:984:48
+      1  100.0%            /usr/local/bin/node
+      1    1.1%        LazyCompile: ~processCiphers node:internal/tls/secure-context:91:24
+      1  100.0%          LazyCompile: ~configSecureContext node:internal/tls/secure-context:120:29
+      1  100.0%            LazyCompile: ~createSecureContext node:_tls_common:99:29
+      1    1.1%        LazyCompile: ~pathtoRegexp /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/path-to-regexp/index.js:28:22
+      1  100.0%          LazyCompile: ~Layer /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/layer.js:33:15
+      1  100.0%            LazyCompile: ~route /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/index.js:502:29
+      1    1.1%        LazyCompile: ~parse /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/@mapbox/node-pre-gyp/node_modules/nopt/lib/nopt.js:242:16
+      1  100.0%          LazyCompile: ~nopt /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/@mapbox/node-pre-gyp/node_modules/nopt/lib/nopt.js:26:15
+      1  100.0%            LazyCompile: ~parseOpts /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:144:37
+      1    1.1%        LazyCompile: ~isIPv6 node:internal/net:35:16
+      1  100.0%          LazyCompile: ~isIP node:internal/net:39:14
+      1  100.0%            LazyCompile: ~parseSslOptions /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connect.js:222:25
+      1    1.1%        LazyCompile: ~exports.escapeRegExpChars /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/utils.js:41:38
+      1  100.0%          LazyCompile: ~createRegex /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:560:25
+      1  100.0%            LazyCompile: ~Template /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:509:18
+      1    1.1%        LazyCompile: ~checkServerIdentity node:tls:274:59
+      1  100.0%          LazyCompile: ~onConnectSecure node:_tls_wrap:1518:25
+      1  100.0%            Function: ^emit node:events:475:44
+      1    1.1%        LazyCompile: ~ConnectionString /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb-connection-string-url/lib/index.js:82:16
+      1  100.0%          Function: ^parseOptions /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/connection_string.js:208:22
+      1  100.0%            LazyCompile: ~MongoClient /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/mongo_client.js:60:16
+      1    1.1%        LazyCompile: ~<anonymous> file:///home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/server.js:13:19
+      1  100.0%          LazyCompile: ~onceWrapper node:events:636:21
+      1  100.0%            LazyCompile: ~emit node:events:475:44
+      1    1.1%        LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/connection_string.js:55:72
+      1  100.0%          LazyCompile: ~onresolve node:dns:207:19
+      1    1.1%        LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connect.js:78:43
+      1  100.0%          LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/auth/scram.js:25:32
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/crypto/random:105:43
+      1    1.1%        Function: ^removeColors node:internal/util:76:22
+      1  100.0%          Function: ^isBelowBreakLength node:internal/util/inspect:1878:28
+      1  100.0%            Function: ^reduceToSingleString node:internal/util/inspect:1902:30
+      1    1.1%        Function: ^pipe /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/send/index.js:506:43
+      1  100.0%          Function: ^serveStatic /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/serve-static/index.js:72:31
+      1  100.0%            Function: ^handle /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/layer.js:86:49
+      1    1.1%        Function: ^onMessage /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection.js:152:14
+      1  100.0%          Function: ^<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection.js:63:44
+      1  100.0%            Function: ^emit node:events:475:44
+      1    1.1%        Function: ^getOwn node:internal/bootstrap/loaders:180:16
+      1  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:287:14
+      1  100.0%            Function: ^<anonymous> node:internal/bootstrap/loaders:273:15
+      1    1.1%        Function: ^getConstructorName node:internal/util/inspect:567:28
+      1  100.0%          Function: ^formatRaw node:internal/util/inspect:820:19
+      1  100.0%            Function: ^formatValue node:internal/util/inspect:745:21
+      1    1.1%        Function: ^generateSource /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:721:28
+      1  100.0%          Function: ^compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:571:21
+      1  100.0%            Function: ^compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:381:35
+      1    1.1%        Function: ^format /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/content-type/index.js:65:17
+      1  100.0%          Function: ^setCharset /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/utils.js:248:41
+      1  100.0%            Function: ^send /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/response.js:111:25
+      1    1.1%        Function: ^compileFunction node:vm:308:25
+      1  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.1%        Function: ^Readable node:internal/streams/readable:181:18
+      1  100.0%          Function: ^IncomingMessage node:_http_incoming:51:25
+      1  100.0%            Function: ^parserOnHeadersComplete node:_http_common:77:33
+      1    1.1%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    1.1%        Function: ^Module node:internal/modules/cjs/loader:172:16
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.1%        Function: ^FastBuffer node:internal/buffer:958:14
+      1  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1  100.0%            Function: ^createPool node:buffer:151:20
+      1    1.1%        Function: ^<anonymous> node:internal/url:684:12
+      1  100.0%          Function: ^toString node:internal/url:732:11
+      1  100.0%            Function: ^URL node:internal/url:621:14
+      1    1.1%        Function: ^<anonymous> file:///home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/routes/info/info.js:7:17
+      1  100.0%          LazyCompile: *handle /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^next /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/route.js:116:16
+     55    3.5%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     42   76.4%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      7   16.7%          Function: ~<anonymous> node:crypto:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      6   14.3%          Function: ~<anonymous> node:http:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    9.5%          Function: ~<anonymous> node:tls:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    4.8%          LazyCompile: ~initCJSParse node:internal/modules/esm/translators:58:28
+      2  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:148:60
+      2    4.8%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    4.8%          Function: ~<anonymous> node:internal/child_process:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    4.8%          Function: ~<anonymous> node:child_process:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    4.8%          Function: ~<anonymous> node:_http_common:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    4.8%          Function: ~<anonymous> node:_http_client:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.4%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      1  100.0%            LazyCompile: ~get node:crypto:287:8
+      1    2.4%          LazyCompile: ~lazyLoadStreams node:fs:2858:25
+      1  100.0%            LazyCompile: ~get ReadStream node:fs:3001:17
+      1    2.4%          LazyCompile: ~get node:dns:334:8
+      1  100.0%            /usr/local/bin/node
+      1    2.4%          LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1  100.0%            LazyCompile: ~getStdout node:internal/bootstrap/switches/is_main_thread:125:19
+      1    2.4%          Function: ~<anonymous> node:tty:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.4%          Function: ~<anonymous> node:internal/crypto/util:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.4%          Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.4%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.4%          Function: ~<anonymous> node:dns:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.4%          Function: ~<anonymous> node:dgram:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.4%          Function: ~<anonymous> node:cluster:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.4%          Function: ~<anonymous> node:assert:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.4%          Function: ~<anonymous> node:_tls_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     10   18.2%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+     10  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+     10  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3    5.5%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      2   66.7%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:44:26
+      2  100.0%            LazyCompile: ~builtinStrategy node:internal/modules/esm/translators:254:58
+      1   33.3%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     43    2.7%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+     43  100.0%        Function: ^Socket._writeGeneric node:net:791:42
+     43  100.0%          Function: ^Socket._writev node:net:823:36
+     43  100.0%            Function: ^doWrite node:internal/streams/writable:398:17
+     39    2.5%      Function: ^<anonymous> file:///home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/routes/info/info.js:7:17
+     23   59.0%        LazyCompile: *handle /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/layer.js:86:49
+     23  100.0%          Function: ^next /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/route.js:116:16
+     23  100.0%            Function: ^dispatch /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/route.js:98:45
+     16   41.0%        Function: ^handle /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/layer.js:86:49
+     16  100.0%          Function: ^next /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/route.js:116:16
+     16  100.0%            Function: ^dispatch /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/route.js:98:45
+     32    2.0%      Function: ^compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:571:21
+     32  100.0%        Function: ^compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:381:35
+     32  100.0%          Function: ^handleCache /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:210:21
+     32  100.0%            Function: ^tryHandleCache /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:254:24
+     30    1.9%      Function: ^Hash node:internal/crypto/hash:58:14
+     30  100.0%        Function: ^createHash node:crypto:129:20
+     17   56.7%          Function: ^hash /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:596:14
+      8   47.1%            Function: ^isModified /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:425:24
+      8   47.1%            Function: ^generate /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:363:22
+      1    5.9%            LazyCompile: ~generate /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:363:22
+     12   40.0%          Function: ^entitytag /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/etag/index.js:39:20
+     12  100.0%            Function: ^etag /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/etag/index.js:70:15
+      1    3.3%          LazyCompile: ~entitytag /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/etag/index.js:39:20
+      1  100.0%            LazyCompile: ~etag /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/etag/index.js:70:15
+     28    1.8%      Function: ^stat node:fs:1467:14
+     28  100.0%        Function: ^sendFile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/send/index.js:712:51
+     28  100.0%          Function: ^pipe /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/send/index.js:506:43
+     28  100.0%            Function: ^serveStatic /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/serve-static/index.js:72:31
+     26    1.7%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     26  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      5   19.2%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      5  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4   15.4%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:477:29
+      4  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      4   15.4%          Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    7.7%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    7.7%          Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    7.7%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.8%          LazyCompile: ~initializeSourceMapsHandlers node:internal/bootstrap/pre_execution:516:38
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1    3.8%          LazyCompile: ~initializeReport node:internal/bootstrap/pre_execution:238:26
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1    3.8%          Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.8%          Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.8%          Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.8%          Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.8%          Function: ~<anonymous> node:internal/blocklist:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     24    1.5%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+     24  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:147:22
+     19   79.2%          Function: ^Socket._writeGeneric node:net:791:42
+     19  100.0%            Function: ^Socket._write node:net:828:35
+      4   16.7%          LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+      4  100.0%            Function: ^_write node:internal/streams/writable:283:16
+      1    4.2%          LazyCompile: *_write node:internal/streams/writable:283:16
+      1  100.0%            Function: ^Writable.write node:internal/streams/writable:333:36
+     17    1.1%      LazyCompile: *scanLine /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:815:22
+     15   88.2%        LazyCompile: *<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:742:32
+     13   86.7%          /usr/local/bin/node
+     13  100.0%            Function: ^generateSource /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:721:28
+      2   13.3%          LazyCompile: *compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:571:21
+      2  100.0%            Function: ^compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:381:35
+      2   11.8%        Function: ^<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:742:32
+      2  100.0%          /usr/local/bin/node
+      2  100.0%            Function: ^generateSource /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:721:28
+     17    1.1%      Function: ^randomFillSync node:internal/crypto/random:111:24
+     17  100.0%        Function: ^randomBytes node:internal/crypto/random:91:21
+     17  100.0%          Function: ^randomBytesSync /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/random-bytes/index.js:72:25
+     17  100.0%            Function: ^uidSync /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/uid-safe/index.js:75:18
+     16    1.0%      Function: ^status /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/response.js:67:29
+     16  100.0%        Function: ^<anonymous> file:///home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/routes/info/info.js:7:17
+     11   68.8%          LazyCompile: *handle /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/layer.js:86:49
+     11  100.0%            Function: ^next /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/route.js:116:16
+      5   31.3%          Function: ^handle /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/layer.js:86:49
+      5  100.0%            Function: ^next /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/route.js:116:16
+     16    1.0%      Function: ^hash /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:596:14
+      9   56.3%        Function: ^isModified /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:425:24
+      7   77.8%          Function: ^shouldSave /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:440:24
+      7  100.0%            Function: ^end /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:250:27
+      2   22.2%          Function: ^shouldSetCookie /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:464:29
+      2  100.0%            Function: ^<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:220:28
+      6   37.5%        Function: ^generate /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:363:22
+      6  100.0%          Function: ^session /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:179:26
+      3   50.0%            LazyCompile: *trim_prefix /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/index.js:293:23
+      2   33.3%            Function: ^handle /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/layer.js:86:49
+      1   16.7%            LazyCompile: *handle /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/layer.js:86:49
+      1    6.3%        LazyCompile: ~generate /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:363:22
+      1  100.0%          LazyCompile: ~session /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:179:26
+      1  100.0%            Function: ^handle /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/layer.js:86:49
+
+    174    5.8%  epoll_pwait
+
+     74    2.5%  __write
+     64   86.5%    /usr/local/bin/node
+      7   10.9%      /usr/local/bin/node
+      1   14.3%        LazyCompile: ~validate /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/aproba/index.js:25:19
+      1  100.0%          LazyCompile: ~module.exports /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/gauge/plumbing.js:6:42
+      1  100.0%            LazyCompile: ~Gauge /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/gauge/index.js:19:16
+      1   14.3%        LazyCompile: ~primordials.SafePromisePrototypeFinally node:internal/per_context/primordials:418:43
+      1  100.0%          LazyCompile: ~readFile node:internal/fs/promises:788:24
+      1  100.0%            /usr/local/bin/node
+      1   14.3%        LazyCompile: ~match /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/layer.js:110:39
+      1  100.0%          LazyCompile: ~matchLayer /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/index.js:583:20
+      1  100.0%            LazyCompile: ~next /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/index.js:177:16
+      1   14.3%        LazyCompile: ~Range.parseRange /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/semver/semver.js:891:39
+      1  100.0%          LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/semver/semver.js:866:53
+      1  100.0%            /usr/local/bin/node
+      1   14.3%        LazyCompile: ~Kareem.filter /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/kareem/index.js:321:35
+      1  100.0%          LazyCompile: ~applyHooks /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/helpers/model/applyHooks.js:32:20
+      1  100.0%            LazyCompile: ~compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/model.js:4816:33
+      1   14.3%        Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/connect-mongo/node_modules/debug/src/node.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1   14.3%        Function: ^parseTemplateText /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:761:31
+      1  100.0%          Function: ^generateSource /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:721:28
+      1  100.0%            Function: ^compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:571:21
+      1    1.6%      LazyCompile: ~writeU_Int32LE node:internal/buffer:690:24
+      1  100.0%        LazyCompile: ~writeInt32LE node:internal/buffer:860:22
+      1  100.0%          LazyCompile: ~toBin /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/commands.js:496:10
+      1  100.0%            LazyCompile: ~writeCommand /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/message_stream.js:35:17
+      1    1.6%      LazyCompile: ~writeHead node:_http_server:270:19
+      1  100.0%        Function: ^writeHead /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/on-headers/index.js:28:29
+      1  100.0%          Function: ^_implicitHeader node:_http_server:265:68
+      1  100.0%            LazyCompile: ~write_ node:_http_outgoing:730:16
+      1    1.6%      LazyCompile: ~writeCommand /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/message_stream.js:35:17
+      1  100.0%        LazyCompile: ~write /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection.js:513:15
+      1  100.0%          LazyCompile: ~command /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection.js:247:12
+      1  100.0%            LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connect.js:78:43
+      1    1.6%      LazyCompile: ~spawn node:child_process:692:15
+      1  100.0%        LazyCompile: ~fork node:child_process:114:14
+      1  100.0%          Script: ~<anonymous> file:///home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/routes/randoms/randoms.js:1:1
+      1  100.0%            /usr/local/bin/node
+      1    1.6%      LazyCompile: ~slice node:buffer:643:12
+      1  100.0%        Function: ^toString node:buffer:783:46
+      1  100.0%          LazyCompile: ~clientFirstMessageBare /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/auth/scram.js:51:32
+      1  100.0%            LazyCompile: ~continueScramConversation /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1    1.6%      LazyCompile: ~serializeLong /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/parser/serializer.js:300:23
+      1  100.0%        Function: ^serializeInto /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/parser/serializer.js:550:23
+      1  100.0%          Function: ^serializeObject /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/parser/serializer.js:258:25
+      1  100.0%            Function: ^serializeInto /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/parser/serializer.js:550:23
+      1    1.6%      LazyCompile: ~resolveBSONOptions /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/bson.js:53:28
+      1  100.0%        LazyCompile: ~resolveOptions /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/utils.js:739:24
+      1  100.0%          LazyCompile: ~collection /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/db.js:192:15
+      1  100.0%            LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/connect-mongo/build/main/lib/MongoStore.js:124:42
+      1    1.6%      LazyCompile: ~resolve node:path:1091:10
+      1  100.0%        LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:89:28
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.6%      LazyCompile: ~readFileSync node:fs:450:22
+      1  100.0%        LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:194:34
+      1  100.0%          LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:148:60
+      1  100.0%            /usr/local/bin/node
+      1    1.6%      LazyCompile: ~readFile node:internal/fs/promises:788:24
+      1  100.0%        /usr/local/bin/node
+      1    1.6%      LazyCompile: ~randomBytes node:internal/crypto/random:91:21
+      1  100.0%        LazyCompile: ~randomBytesSync /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/random-bytes/index.js:72:25
+      1  100.0%          LazyCompile: ~uidSync /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/uid-safe/index.js:75:18
+      1  100.0%            LazyCompile: ~generateSessionId /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:518:27
+      1    1.6%      LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.6%      LazyCompile: ~prefinish node:internal/streams/writable:719:19
+      1  100.0%        Function: ^finishMaybe node:internal/streams/writable:731:21
+      1  100.0%          LazyCompile: ~Writable.end node:internal/streams/writable:594:34
+      1  100.0%            LazyCompile: ~Socket.end node:net:630:32
+      1    1.6%      LazyCompile: ~percentDecodeBytes /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/whatwg-url/lib/percent-encoding.js:20:28
+      1  100.0%        LazyCompile: ~parseUrlencoded /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/whatwg-url/lib/urlencoded.js:10:25
+      1  100.0%          LazyCompile: ~parseUrlencodedString /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/whatwg-url/lib/urlencoded.js:41:31
+      1  100.0%            LazyCompile: ~URLSearchParamsImpl /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/whatwg-url/lib/URLSearchParams-impl.js:5:14
+      1    1.6%      LazyCompile: ~parse node:url:167:37
+      1  100.0%        LazyCompile: ~urlParse node:url:151:18
+      1  100.0%          LazyCompile: ~validate_config /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1  100.0%            LazyCompile: ~exports.find /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1    1.6%      LazyCompile: ~packageExportsResolve node:internal/modules/esm/resolve:678:31
+      1  100.0%        LazyCompile: ~packageResolve node:internal/modules/esm/resolve:897:24
+      1  100.0%          LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:988:23
+      1  100.0%            LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1128:30
+      1    1.6%      LazyCompile: ~handleWriteReq node:internal/stream_base_commons:45:24
+      1  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:147:22
+      1  100.0%          Function: ^Socket._writeGeneric node:net:791:42
+      1  100.0%            Function: ^Socket._write node:net:828:35
+      1    1.6%      LazyCompile: ~getFileProtocolModuleFormat node:internal/modules/esm/get_format:51:37
+      1  100.0%        LazyCompile: ~defaultGetFormatWithoutErrors node:internal/modules/esm/get_format:103:39
+      1  100.0%          LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1128:30
+      1  100.0%            LazyCompile: ~resolve node:internal/modules/esm/loader:556:16
+      1    1.6%      LazyCompile: ~generateSource /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:721:28
+      1  100.0%        LazyCompile: ~compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:571:21
+      1  100.0%          LazyCompile: ~compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:381:35
+      1  100.0%            LazyCompile: ~handleCache /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:210:21
+      1    1.6%      LazyCompile: ~generateETag /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/utils.js:273:32
+      1  100.0%        LazyCompile: ~send /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/response.js:111:25
+      1  100.0%          LazyCompile: ~done /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/response.js:1033:27
+      1  100.0%            LazyCompile: ~tryHandleCache /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:254:24
+      1    1.6%      LazyCompile: ~fromStringFast node:buffer:413:24
+      1  100.0%        LazyCompile: ~fromString node:buffer:432:20
+      1  100.0%          LazyCompile: ~from node:buffer:296:28
+      1  100.0%            LazyCompile: ~makeFirstMessage /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/auth/scram.js:61:26
+      1    1.6%      LazyCompile: ~free node:internal/freelist:21:7
+      1  100.0%        LazyCompile: ~freeParser node:_http_common:192:20
+      1  100.0%          LazyCompile: ~socketOnClose node:_http_server:593:23
+      1  100.0%            Function: ^emit node:events:475:44
+      1    1.6%      LazyCompile: ~formatValue node:internal/util/inspect:745:21
+      1  100.0%        LazyCompile: ~inspect node:internal/util/inspect:292:17
+      1  100.0%          LazyCompile: ~createAppender /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/log4js/lib/appenders/index.js:62:24
+      1  100.0%            LazyCompile: ~getAppender /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/log4js/lib/appenders/index.js:48:21
+      1    1.6%      LazyCompile: ~finalizeResolution node:internal/modules/esm/resolve:397:28
+      1  100.0%        Function: ^moduleResolve node:internal/modules/esm/resolve:988:23
+      1  100.0%          LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1128:30
+      1  100.0%            Function: ^resolve node:internal/modules/esm/loader:556:16
+      1    1.6%      LazyCompile: ~extend /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/node-localstorage/LocalStorage.js:4:22
+      1  100.0%        Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/node-localstorage/LocalStorage.js:327:26
+      1  100.0%          Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/node-localstorage/LocalStorage.js:2:10
+      1  100.0%            Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/node-localstorage/LocalStorage.js:1:1
+      1    1.6%      LazyCompile: ~equals /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/sdam/server_description.js:118:11
+      1  100.0%        LazyCompile: ~serverUpdateHandler /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/sdam/topology.js:372:24
+      1  100.0%          LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/sdam/topology.js:535:53
+      1  100.0%            Function: ^emit node:events:475:44
+      1    1.6%      LazyCompile: ~deserializeObject /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%        LazyCompile: ~deserializeObject /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%          LazyCompile: ~deserialize /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%            LazyCompile: ~deserialize /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/bson.js:162:21
+      1    1.6%      LazyCompile: ~defaultLoad node:internal/modules/esm/load:13:27
+      1  100.0%        LazyCompile: ~load node:internal/modules/esm/loader:401:13
+      1  100.0%          LazyCompile: ~moduleProvider node:internal/modules/esm/loader:322:28
+      1  100.0%            Function: ^ModuleJob node:internal/modules/esm/module_job:56:14
+      1    1.6%      LazyCompile: ~continueScramConversation /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%        LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1  100.0%          LazyCompile: ~onMessage /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection.js:152:14
+      1  100.0%            LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection.js:63:44
+      1    1.6%      LazyCompile: ~compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:571:21
+      1  100.0%        LazyCompile: ~compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:381:35
+      1  100.0%          LazyCompile: ~handleCache /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:210:21
+      1  100.0%            LazyCompile: ~tryHandleCache /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:254:24
+      1    1.6%      LazyCompile: ~checkInt node:internal/buffer:58:18
+      1  100.0%        LazyCompile: ~writeU_Int32LE node:internal/buffer:690:24
+      1  100.0%          LazyCompile: ~writeInt32LE node:internal/buffer:860:22
+      1  100.0%            LazyCompile: ~toBin /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/commands.js:496:10
+      1    1.6%      LazyCompile: ~assertEncoding node:internal/fs/utils:152:24
+      1  100.0%        Function: ^getOptions node:internal/fs/utils:315:20
+      1  100.0%          Function: ^realpathSync node:fs:2425:22
+      1  100.0%            Function: ^finalizeResolution node:internal/modules/esm/resolve:397:28
+      1    1.6%      LazyCompile: ~Socket._writev node:net:823:36
+      1  100.0%        LazyCompile: ~doWrite node:internal/streams/writable:398:17
+      1  100.0%          LazyCompile: ~clearBuffer node:internal/streams/writable:529:21
+      1  100.0%            Function: ^Writable.uncork node:internal/streams/writable:341:37
+      1    1.6%      LazyCompile: ~Schema.setupTimestamp /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/schema.js:1406:43
+      1  100.0%        LazyCompile: ~Schema /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/schema.js:95:16
+      1  100.0%          Script: ~<anonymous> file:///home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/config/Atlas/models.js:1:1
+      1  100.0%            /usr/local/bin/node
+      1    1.6%      LazyCompile: ~Pager.set /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/memory-pager/index.js:81:32
+      1  100.0%        LazyCompile: ~Bitfield /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%          LazyCompile: ~Bitfield /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%            LazyCompile: ~read /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/saslprep/lib/memory-code-points.js:15:14
+      1    1.6%      LazyCompile: ~Monitor /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/sdam/monitor.js:40:16
+      1  100.0%        LazyCompile: ~Server /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/sdam/server.js:28:16
+      1  100.0%          LazyCompile: ~createAndConnectServer /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/sdam/topology.js:529:32
+      1  100.0%            LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/sdam/topology.js:190:57
+      1    1.6%      LazyCompile: ~MongoClient /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/mongo_client.js:60:16
+      1  100.0%        LazyCompile: ~connect /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/mongo_client.js:178:19
+      1  100.0%          LazyCompile: ~MongoStore /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/connect-mongo/build/main/lib/MongoStore.js:75:16
+      1  100.0%            LazyCompile: ~create /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/connect-mongo/build/main/lib/MongoStore.js:135:18
+      1    1.6%      LazyCompile: ~Module node:internal/modules/cjs/loader:172:16
+      1  100.0%        LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:194:34
+      1  100.0%          LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:148:60
+      1  100.0%            /usr/local/bin/node
+      1    1.6%      LazyCompile: ~Duplex node:internal/streams/duplex:52:16
+      1  100.0%        LazyCompile: ~Socket node:net:285:16
+      1  100.0%          LazyCompile: ~WriteStream node:tty:85:21
+      1  100.0%            LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1    1.6%      LazyCompile: ~Db /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/db.js:81:16
+      1  100.0%        LazyCompile: ~db /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/mongo_client.js:165:7
+      1  100.0%          LazyCompile: ~_setClient /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/connection.js:836:20
+      1  100.0%            LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/connection.js:792:20
+      1    1.6%      LazyCompile: ~Connection.collection /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/connection.js:1022:43
+      1  100.0%        LazyCompile: ~compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/model.js:4816:33
+      1  100.0%          LazyCompile: ~Mongoose._model /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/index.js:535:37
+      1  100.0%            LazyCompile: ~Mongoose.model /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/index.js:471:36
+      1    1.6%      LazyCompile: ~ChildProcess.spawn node:internal/child_process:347:40
+      1  100.0%        LazyCompile: ~spawn node:child_process:692:15
+      1  100.0%          LazyCompile: ~fork node:child_process:114:14
+      1  100.0%            Script: ~<anonymous> file:///home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/routes/randoms/randoms.js:1:1
+      1    1.6%      LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/model.js:1313:5
+      1  100.0%        LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/model.js:1316:28
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            LazyCompile: ~init /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/model.js:1290:27
+      1    1.6%      LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/collection.js:75:13
+      1  100.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.6%      LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/sdam/topology.js:205:106
+      1  100.0%        LazyCompile: ~processWaitQueue /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/sdam/topology.js:589:26
+      1  100.0%          LazyCompile: ~serverUpdateHandler /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/sdam/topology.js:372:24
+      1  100.0%            LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/sdam/topology.js:535:53
+      1    1.6%      LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/sdam/monitor.js:222:12
+      1  100.0%        LazyCompile: ~executeAndReschedule /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/utils.js:701:34
+      1  100.0%          LazyCompile: ~listOnTimeout node:internal/timers:507:25
+      1  100.0%            LazyCompile: ~processTimers node:internal/timers:487:25
+      1    1.6%      LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/operations/indexes.js:106:52
+      1  100.0%        LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection_pool.js:267:27
+      1  100.0%          LazyCompile: ~handleOperationResult /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/sdam/server.js:325:42
+      1  100.0%            LazyCompile: ~onMessage /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection.js:152:14
+      1    1.6%      LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/connection_string.js:258:85
+      1  100.0%        /usr/local/bin/node
+      1  100.0%          LazyCompile: ~parseOptions /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/connection_string.js:208:22
+      1  100.0%            LazyCompile: ~MongoClient /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/mongo_client.js:60:16
+      1    1.6%      Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/saslprep/lib/memory-code-points.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connect.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/timestamp.js:27:41
+      1  100.0%        Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/timestamp.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/parser/deserializer.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ^onMessage /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection.js:152:14
+      1  100.0%        Function: ^<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection.js:63:44
+      1  100.0%          Function: ^emit node:events:475:44
+      1  100.0%            Function: ^processIncomingData /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    1.6%      Function: ^hasObserver node:internal/perf/observe:441:21
+      1  100.0%        Function: ^ServerResponse node:_http_server:178:24
+      1  100.0%          Function: ^parserOnIncoming node:_http_server:857:26
+      1  100.0%            Function: ^parserOnHeadersComplete node:_http_common:77:33
+      1    1.6%      Function: ^forEachCode /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/http-errors/index.js:259:38
+      1  100.0%        /usr/local/bin/node
+      1  100.0%          LazyCompile: ~populateConstructorExports /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/http-errors/index.js:258:37
+      1  100.0%            Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/http-errors/index.js:1:1
+
+     41    1.4%  /usr/lib/x86_64-linux-gnu/libc-2.31.so
+     27   65.9%    /usr/local/bin/node
+      6   22.2%      /usr/local/bin/node
+      2   33.3%        Function: ^toString /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/uid-safe/index.js:102:19
+      2  100.0%          Function: ^uidSync /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/uid-safe/index.js:75:18
+      2  100.0%            Function: ^generateSessionId /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:518:27
+      1   16.7%        LazyCompile: *scanLine /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:815:22
+      1  100.0%          LazyCompile: *<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:742:32
+      1  100.0%            /usr/local/bin/node
+      1   16.7%        LazyCompile: *handle /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          Function: ^next /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/route.js:116:16
+      1  100.0%            Function: ^dispatch /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/route.js:98:45
+      1   16.7%        Function: ^createRegex /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:560:25
+      1  100.0%          Function: ^Template /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:509:18
+      1  100.0%            Function: ^compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:381:35
+      1   16.7%        Function: ^buildAllowedFlags node:internal/process/per_thread:265:27
+      1  100.0%          LazyCompile: ~get node:internal/bootstrap/node:278:6
+      1  100.0%            /usr/local/bin/node
+      3   11.1%      LazyCompile: *<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:742:32
+      2   66.7%        /usr/local/bin/node
+      2  100.0%          Function: ^generateSource /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:721:28
+      2  100.0%            Function: ^compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:571:21
+      1   33.3%        LazyCompile: *compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:571:21
+      1  100.0%          Function: ^compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:381:35
+      1  100.0%            Function: ^handleCache /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:210:21
+      1    3.7%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+      1    3.7%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:70:31
+      1    3.7%      LazyCompile: ~realpathSync node:fs:2425:22
+      1  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1    3.7%      LazyCompile: ~isIP node:internal/net:39:14
+      1  100.0%        LazyCompile: ~lookup node:dns:97:16
+      1  100.0%          LazyCompile: ~<anonymous> node:net:1073:61
+      1  100.0%            LazyCompile: ~defaultTriggerAsyncIdScope node:internal/async_hooks:456:36
+      1    3.7%      LazyCompile: ~getTimerDuration node:internal/timers:383:26
+      1  100.0%        Function: ^setStreamTimeout node:internal/stream_base_commons:237:26
+      1  100.0%          LazyCompile: ~makeConnection /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connect.js:241:24
+      1  100.0%            LazyCompile: ~connect /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connect.js:30:17
+      1    3.7%      LazyCompile: ~deserializeObject /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%        LazyCompile: ~deserialize /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%          LazyCompile: ~deserialize /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/bson.js:162:21
+      1  100.0%            LazyCompile: ~parse /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/commands.js:384:10
+      1    3.7%      LazyCompile: ~deserialize /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%        LazyCompile: ~deserialize /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/bson.js:162:21
+      1  100.0%          LazyCompile: ~parse /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/commands.js:384:10
+      1  100.0%            LazyCompile: ~onMessage /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection.js:152:14
+      1    3.7%      LazyCompile: ~concat node:buffer:536:32
+      1  100.0%        LazyCompile: ~writeCommand /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/message_stream.js:35:17
+      1  100.0%          LazyCompile: ~write /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection.js:513:15
+      1  100.0%            LazyCompile: ~command /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection.js:247:12
+      1    3.7%      LazyCompile: ~_send node:_http_outgoing:319:49
+      1  100.0%        LazyCompile: ~write_ node:_http_outgoing:730:16
+      1  100.0%          LazyCompile: ~end node:_http_outgoing:833:45
+      1  100.0%            LazyCompile: ~end /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:250:27
+      1    3.7%      LazyCompile: ~<anonymous> node:fs:197:10
+      1    3.7%      LazyCompile: *realpathSync node:fs:2425:22
+      1  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1    3.7%      Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/npmlog/log.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    3.7%      Function: ^realpathSync node:fs:2425:22
+      1  100.0%        Function: ^finalizeResolution node:internal/modules/esm/resolve:397:28
+      1  100.0%          Function: ^moduleResolve node:internal/modules/esm/resolve:988:23
+      1  100.0%            Function: ^defaultResolve node:internal/modules/esm/resolve:1128:30
+      1    3.7%      Function: ^deserializeObject /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%        Function: ^deserialize /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%          Function: ^deserialize /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/bson/lib/bson.js:162:21
+      1  100.0%            Function: ^parse /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1    3.7%      Function: ^compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:571:21
+      1  100.0%        Function: ^compile /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:381:35
+      1  100.0%          Function: ^handleCache /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:210:21
+      1  100.0%            Function: ^tryHandleCache /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/ejs/lib/ejs.js:254:24
+      1    3.7%      Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1  100.0%            Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/schema/buffer.js:1:1
+      1    3.7%      Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    3.7%      Function: ^C node:internal/deps/cjs-module-lexer/dist/lexer:1:1152
+      1  100.0%        LazyCompile: ~parse node:internal/deps/cjs-module-lexer/dist/lexer:1:131
+      1  100.0%          LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:194:34
+      1  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:148:60
+
+     40    1.3%  fwrite
+     37   92.5%    /usr/local/bin/node
+      3    8.1%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      3  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      3  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      3  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:70:31
+      3    8.1%      LazyCompile: ~onParseError node:internal/url:552:22
+      3  100.0%        /usr/local/bin/node
+      3  100.0%          Function: ^URL node:internal/url:621:14
+      3  100.0%            LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1128:30
+      2    5.4%      LazyCompile: ~realpathSync node:fs:2425:22
+      2  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      2  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      2    5.4%      LazyCompile: ~createAppender /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/log4js/lib/appenders/index.js:62:24
+      2  100.0%        LazyCompile: ~getAppender /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/log4js/lib/appenders/index.js:48:21
+      2  100.0%          LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/log4js/lib/appenders/index.js:112:41
+      2  100.0%            /usr/local/bin/node
+      1    2.7%      LazyCompile: ~writeHead /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/on-headers/index.js:28:29
+      1  100.0%        LazyCompile: ~_implicitHeader node:_http_server:265:68
+      1  100.0%          LazyCompile: ~write_ node:_http_outgoing:730:16
+      1  100.0%            LazyCompile: ~end node:_http_outgoing:833:45
+      1    2.7%      LazyCompile: ~transform /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/connection_string.js:447:18
+      1  100.0%        LazyCompile: ~setOption /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/connection_string.js:396:19
+      1  100.0%          LazyCompile: ~parseOptions /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/connection_string.js:208:22
+      1  100.0%            LazyCompile: ~MongoClient /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/mongo_client.js:60:16
+      1    2.7%      LazyCompile: ~setupWebCrypto node:internal/bootstrap/pre_execution:170:24
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.7%      LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:142:29
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.7%      LazyCompile: ~setup /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mquery/node_modules/debug/src/common.js:7:15
+      1  100.0%        Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mquery/node_modules/debug/src/node.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    2.7%      LazyCompile: ~pathToFileURL node:internal/url:1458:23
+      1  100.0%        LazyCompile: ~packageResolve node:internal/modules/esm/resolve:897:24
+      1  100.0%          Function: ^moduleResolve node:internal/modules/esm/resolve:988:23
+      1  100.0%            LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1128:30
+      1    2.7%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:89:28
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.7%      LazyCompile: ~patch /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/graceful-fs/polyfills.js:29:16
+      1  100.0%        LazyCompile: ~patch /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/graceful-fs/graceful-fs.js:102:16
+      1  100.0%          Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/graceful-fs/graceful-fs.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    2.7%      LazyCompile: ~parseHost /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/whatwg-url/lib/url-state-machine.js:328:19
+      1  100.0%        LazyCompile: ~parseHostName /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/whatwg-url/lib/url-state-machine.js:773:65
+      1  100.0%          Function: ^URLStateMachine /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/whatwg-url/lib/url-state-machine.js:481:25
+      1  100.0%            LazyCompile: ~module.exports.basicURLParse /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/whatwg-url/lib/url-state-machine.js:1206:41
+      1    2.7%      LazyCompile: ~onceWrapper node:events:636:21
+      1  100.0%        Function: ^emit node:events:475:44
+      1  100.0%          LazyCompile: ~afterConnect node:net:1141:22
+      1    2.7%      LazyCompile: ~onMessage /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection.js:152:14
+      1  100.0%        LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection.js:63:44
+      1  100.0%          Function: ^emit node:events:475:44
+      1  100.0%            LazyCompile: ~processIncomingData /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    2.7%      LazyCompile: ~nopt /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/@mapbox/node-pre-gyp/node_modules/nopt/lib/nopt.js:26:15
+      1  100.0%        LazyCompile: ~parseOpts /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:144:37
+      1  100.0%          LazyCompile: ~Run /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:78:13
+      1  100.0%            LazyCompile: ~exports.find /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1    2.7%      LazyCompile: ~nextTick node:internal/process/task_queues:104:18
+      1  100.0%        LazyCompile: ~immediate /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/helpers/immediate.js:14:36
+      1  100.0%          LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/connection.js:571:34
+      1  100.0%            LazyCompile: ~promiseOrCallback /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1    2.7%      LazyCompile: ~makeIndexSpec /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/operations/indexes.js:39:23
+      1  100.0%        LazyCompile: ~CreateIndexOperation /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/operations/indexes.js:119:16
+      1  100.0%          LazyCompile: ~createIndex /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/collection.js:254:16
+      1  100.0%            LazyCompile: ~setAutoRemove /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/connect-mongo/build/main/lib/MongoStore.js:138:18
+      1    2.7%      LazyCompile: ~getOwn node:internal/bootstrap/loaders:180:16
+      1  100.0%        LazyCompile: ~syncExports node:internal/bootstrap/loaders:287:14
+      1  100.0%          LazyCompile: ~<anonymous> node:internal/bootstrap/loaders:273:15
+      1  100.0%            /usr/local/bin/node
+      1    2.7%      LazyCompile: ~generate /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:363:22
+      1  100.0%        LazyCompile: ~session /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express-session/index.js:179:26
+      1  100.0%          LazyCompile: ~handle /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~trim_prefix /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/router/index.js:293:23
+      1    2.7%      LazyCompile: ~finalhandler /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/finalhandler/index.js:77:23
+      1  100.0%        Function: ^handle /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/application.js:165:29
+      1  100.0%          Function: ^app /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/express/lib/express.js:38:21
+      1  100.0%            Function: ^emit node:events:475:44
+      1    2.7%      LazyCompile: ~createHttpErrorConstructor /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/http-errors/index.js:112:37
+      1  100.0%        Function: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/http-errors/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    2.7%      LazyCompile: ~createHash node:crypto:129:20
+      1  100.0%        LazyCompile: ~passwordDigest /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/auth/scram.js:182:24
+      1  100.0%          LazyCompile: ~continueScramConversation /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%            LazyCompile: ~<anonymous> /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1    2.7%      LazyCompile: ~ServerResponse node:_http_server:178:24
+      1  100.0%        LazyCompile: ~parserOnIncoming node:_http_server:857:26
+      1  100.0%          LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    2.7%      LazyCompile: ~Schema.defaultOptions /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/schema.js:434:43
+      1  100.0%        LazyCompile: ~Schema /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongoose/lib/schema.js:95:16
+      1  100.0%          Script: ~<anonymous> file:///home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/config/Atlas/models.js:1:1
+      1  100.0%            /usr/local/bin/node
+      1    2.7%      LazyCompile: ~Readable node:internal/streams/readable:181:18
+      1  100.0%        LazyCompile: ~Duplex node:internal/streams/duplex:52:16
+      1  100.0%          LazyCompile: ~Socket node:net:285:16
+      1  100.0%            LazyCompile: ~WriteStream node:tty:85:21
+      1    2.7%      LazyCompile: ~Msg /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/commands.js:468:16
+      1  100.0%        LazyCompile: ~command /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/connection.js:247:12
+      1  100.0%          LazyCompile: ~executeScram /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/auth/scram.js:74:22
+      1  100.0%            LazyCompile: ~auth /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/cmap/auth/scram.js:39:9
+      1    2.7%      LazyCompile: ~ConnectionString /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb-connection-string-url/lib/index.js:82:16
+      1  100.0%        LazyCompile: ~parseOptions /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/connection_string.js:208:22
+      1  100.0%          LazyCompile: ~MongoClient /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/mongo_client.js:60:16
+      1  100.0%            LazyCompile: ~connect /home/pixel/Escritorio/Programacion/Backend/Entregas/Proyecto-CoderHouse/node_modules/mongodb/lib/mongo_client.js:178:19
+      1    2.7%      Function: ~<anonymous> node:internal/modules/cjs/helpers:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1    2.7%      Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      1    2.7%      /usr/local/bin/node
+      1  100.0%        LazyCompile: ~isIPv6 node:internal/net:35:16
+      1  100.0%          LazyCompile: ~isIP node:internal/net:39:14
+      1  100.0%            LazyCompile: ~lookupAndConnect node:net:1017:26
+
